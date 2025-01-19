@@ -1,5 +1,5 @@
 import './App.css';
-import UseLocalStorageDemo from './CustomHooks/useLocalStorageDemo';
+import UseLocalStorageDemo from './CustomHooks/useLocalStorage/useLocalStorageDemo';
 
 function App() {
   return (
