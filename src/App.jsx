@@ -1,5 +1,5 @@
 import './App.css';
-import UseFetchDemo from './CustomHooks/useFetch/UseFetchDemo';
+import UseFetchDemo from './CustomHooks/UseFetchDemo';
 
 function App() {
   return (

@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
