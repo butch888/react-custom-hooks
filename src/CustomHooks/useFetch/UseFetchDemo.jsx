@@ -1,6 +1,11 @@
+import { useState } from "react";
 import useFetch from "./useFetch";
 
+
+
 function UseFetchDemo() {
+  const [inpValue, setInpValue] = useState('')
+
   const {
     data,
     isLoading,
@@ -11,17 +16,17 @@ function UseFetchDemo() {
   return (
     <div>
       <div>
+        <input type="number" onChange={(e) => setInpValue(e.target.value)}/>
         <button onClick={() => refetch({
           params: {
-            _limit: 3
+            _limit: inpValue, _page: 1
           }
         })}>
           Перезапросить
         </button>
       </div>
-      {isLoading && 'Загрузка...'}
+      {isLoading ? 'Загрузка...' : data?.map(item => <div key={item.id}>{item.id}</div>) }
       {error && 'Произошла ошибка'}
-      {data && !isLoading && data.map(item => <div key={item.id}>{item.id}</div>) }
     </div>
   );
 }
