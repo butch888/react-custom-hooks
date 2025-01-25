@@ -1,6 +1,7 @@
 import './App.css';
 import UseFetchDemo from './CustomHooks/UseFetchDemo';
 // import UseLocalStorageDemo from './CustomHooks/useLocalStorageDemo';
+// import UseHoverDemo from './CustomHooks/UseHoverDemo'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Title</h1>
       <UseFetchDemo />
       {/* <UseLocalStorageDemo /> */}
+      {/* <UseHoverDemo /> */}
     </div>
   )
 }
