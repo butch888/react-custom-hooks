@@ -1,6 +1,6 @@
 import './App.css';
 import UseFetchDemo from './CustomHooks/UseFetchDemo';
-// import UseLocalStorageDemo from './CustomHooks/useLocalStorageDemo';
+// import UseLocalStorageDemo from './CustomHooks/UseLocalStorageDemo';
 // import UseHoverDemo from './CustomHooks/UseHoverDemo'
 
 function App() {
